@@ -1,0 +1,7 @@
+platform :ios, '8.3.3'
+target "YoyoTrainingApp" do
+
+pod 'GoogleSignIn'
+pod 'Firebase/Auth'
+
+end

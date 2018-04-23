@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="17E199" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Sign In-->
+        <scene sceneID="hNz-n2-bh7">
+            <objects>
+                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="YoyoTrainingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
+                        <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IphoneWallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="ceK-xB-vEg">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yoyoLogo1" translatesAutoresizingMaskIntoConstraints="NO" id="xg3-89-Wh3">
+                                <rect key="frame" x="20" y="20" width="374" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="ceK-xB-vEg" secondAttribute="bottom" id="0HL-wP-kIe"/>
+                            <constraint firstItem="xg3-89-Wh3" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" id="CQA-CN-HDf"/>
+                            <constraint firstItem="xg3-89-Wh3" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailingMargin" id="VT5-Gh-fhH"/>
+                            <constraint firstItem="xg3-89-Wh3" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="bbD-X0-SEk"/>
+                            <constraint firstItem="ceK-xB-vEg" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="cSQ-sZ-nbt"/>
+                            <constraint firstItem="xg3-89-Wh3" firstAttribute="bottom" secondItem="4ug-Mw-9AY" secondAttribute="top" id="fRx-M4-N13"/>
+                            <constraint firstItem="ceK-xB-vEg" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" id="rw0-S7-WAD"/>
+                            <constraint firstAttribute="trailing" secondItem="ceK-xB-vEg" secondAttribute="trailing" id="sjU-1k-G5O"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Sign In" image="icons8-google-32" selectedImage="icons8-google-32" id="acW-dT-cKf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="836" y="0.0"/>
+        </scene>
+        <!--Workouts/Diets-->
+        <scene sceneID="wg7-f3-ORb">
+            <objects>
+                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="YoyoTrainingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
+                        <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="WORKOUT/DIET" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="TS4-W9-mAI">
+                                <rect key="frame" x="76.333333333333343" y="20" width="262.66666666666663" height="42"/>
+                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="36"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aMj-X2-58M">
+                                <rect key="frame" x="0.0" y="70" width="414" height="617"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="LfC-Rw-BHe" detailTextLabel="B0A-DR-ys6" style="IBUITableViewCellStyleValue1" id="i5F-YB-eV1">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="i5F-YB-eV1" id="erd-7F-xgG">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LfC-Rw-BHe">
+                                                    <rect key="frame" x="15" y="11.999999999999998" width="33.333333333333336" height="20.333333333333332"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="B0A-DR-ys6">
+                                                    <rect key="frame" x="355" y="11.999999999999998" width="44" height="20.333333333333332"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="8rJ-Kc-sve" id="8KG-NY-pPR"/>
+                                    <outlet property="delegate" destination="8rJ-Kc-sve" id="mBQ-6k-aMl"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TS4-W9-mAI" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" id="Tkj-iW-ISV"/>
+                            <constraint firstItem="TS4-W9-mAI" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="Vhh-IG-N0N"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Workouts/Diets" image="Icon-Small" selectedImage="Icon-Small" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="TableView" destination="aMj-X2-58M" id="fQc-Ql-a3P"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1634.7826086956522" y="0.0"/>
+        </scene>
+        <!--Calendar-->
+        <scene sceneID="7zM-97-IHx">
+            <objects>
+                <viewController id="Dqz-Jy-wil" customClass="FourthViewController" customModule="YoyoTrainingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="91G-xr-Dm3"/>
+                        <viewControllerLayoutGuide type="bottom" id="1da-8y-Qx9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TIc-9g-ZqW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ncv-jN-Q3W">
+                                <rect key="frame" x="20" y="20" width="374" height="667"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="brz-2w-U35" userLabel="TopStackView">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="667"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="n3E-pb-STc" userLabel="CalendarStackView">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="345"/>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jt8-BT-swh">
+                                                <rect key="frame" x="0.0" y="355" width="374" height="86"/>
+                                                <color key="backgroundColor" red="0.80392158030000005" green="0.80392158030000005" blue="0.80392158030000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="SEND"/>
+                                                <connections>
+                                                    <action selector="sendButton:" destination="Dqz-Jy-wil" eventType="touchUpInside" id="RoU-0H-WBB"/>
+                                                </connections>
+                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="1ib-tb-e6y" userLabel="DatePickerStackView">
+                                                <rect key="frame" x="0.0" y="451" width="374" height="216"/>
+                                                <subviews>
+                                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Q8n-H2-fDb">
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="216"/>
+                                                        <date key="date" timeIntervalSinceReferenceDate="545089066.711344">
+                                                            <!--2018-04-10 21:37:46 +0000-->
+                                                        </date>
+                                                    </datePicker>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <variation key="heightClass=compact-widthClass=compact" axis="horizontal"/>
+                                        <variation key="heightClass=regular-widthClass=compact" axis="vertical"/>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="brz-2w-U35" firstAttribute="centerX" secondItem="Ncv-jN-Q3W" secondAttribute="centerX" id="6ZT-Gq-NtO"/>
+                                    <constraint firstAttribute="bottom" secondItem="brz-2w-U35" secondAttribute="bottom" id="7PP-Qj-rmV"/>
+                                    <constraint firstAttribute="trailing" secondItem="brz-2w-U35" secondAttribute="trailing" id="U8Q-q4-G1D"/>
+                                    <constraint firstItem="brz-2w-U35" firstAttribute="top" secondItem="Ncv-jN-Q3W" secondAttribute="top" id="mWb-dJ-1lu"/>
+                                    <constraint firstItem="brz-2w-U35" firstAttribute="leading" secondItem="Ncv-jN-Q3W" secondAttribute="leading" id="wj5-EQ-cq1"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ncv-jN-Q3W" firstAttribute="leading" secondItem="TIc-9g-ZqW" secondAttribute="leadingMargin" id="I4A-mQ-G1Y"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ncv-jN-Q3W" secondAttribute="trailing" id="f5k-s2-MEE"/>
+                            <constraint firstItem="1da-8y-Qx9" firstAttribute="top" secondItem="brz-2w-U35" secondAttribute="bottom" id="j6c-M8-92R"/>
+                            <constraint firstItem="1da-8y-Qx9" firstAttribute="top" secondItem="Ncv-jN-Q3W" secondAttribute="bottom" id="jC3-N2-csn"/>
+                            <constraint firstItem="brz-2w-U35" firstAttribute="top" secondItem="91G-xr-Dm3" secondAttribute="bottom" id="u23-Af-ubh"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Calendar" image="Icon-Small copy 2" selectedImage="Icon-Small copy 2" id="r2S-vK-7yj"/>
+                    <connections>
+                        <outlet property="calendarStackView" destination="n3E-pb-STc" id="BWz-U3-aAk"/>
+                        <outlet property="datePicker" destination="Q8n-H2-fDb" id="vGj-rQ-9Ed"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i3V-X4-xtd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="836" y="796.55172413793105"/>
+        </scene>
+        <!--About-->
+        <scene sceneID="Kxn-vX-imC">
+            <objects>
+                <viewController id="Uaz-Ao-Huz" customClass="ThirdViewController" customModule="YoyoTrainingApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nja-Fn-j60"/>
+                        <viewControllerLayoutGuide type="bottom" id="yOT-al-n9b"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ahu-YD-odM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="c3D-sj-XSg" userLabel="TopStackView">
+                                <rect key="frame" x="20" y="20" width="374" height="666"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" verticalHuggingPriority="255" verticalCompressionResistancePriority="1000" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="rw7-uz-JVz" userLabel="FirstStackView">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="232.33333333333334"/>
+                                        <subviews>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="251" text="CONTACT" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="HCl-kL-6zK">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="42.333333333333336"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="36"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="pJU-ex-c3H">
+                                                <rect key="frame" x="0.0" y="42.333333333333343" width="374" height="75"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="75" id="FYe-3Z-7at"/>
+                                                </constraints>
+                                                <string key="text">My name is Youssef Haidar AKA "Yoyo". I am a Windsor based personal trainer and lifestyle coach that teaches through Education, Experience and Example.                       </string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="I will get back to you within 24 hours." textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="WuJ-aY-OUM">
+                                                <rect key="frame" x="0.0" y="117.33333333333334" width="374" height="25"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="25" id="LqX-L2-lbi"/>
+                                                </constraints>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="PHONE: (519) 999-9999" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Jhp-0Z-g9j">
+                                                <rect key="frame" x="0.0" y="142.33333333333334" width="374" height="30"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="DKq-Bn-imB"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="EMAIL: yoyo@gmail.com" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5Sc-CU-orG">
+                                                <rect key="frame" x="0.0" y="172.33333333333334" width="374" height="30"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="iWK-oQ-zZ9"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="SOCIAL MEDIA:" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="QWX-TE-QBq">
+                                                <rect key="frame" x="0.0" y="202.33333333333334" width="374" height="30"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="Mn8-PT-RXe"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" verticalHuggingPriority="247" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="O46-z0-MGP" userLabel="SecondStackView">
+                                        <rect key="frame" x="0.0" y="237.33333333333329" width="374" height="428.66666666666674"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VDp-R9-HUH">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="28"/>
+                                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="13"/>
+                                                <state key="normal" title="Facebook">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="facebookButton:" destination="Uaz-Ao-Huz" eventType="touchUpInside" id="ZmT-TP-t4n"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" verticalCompressionResistancePriority="755" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1rB-fw-RtU">
+                                                <rect key="frame" x="0.0" y="28" width="374" height="28"/>
+                                                <color key="backgroundColor" red="0.88235294119999996" green="0.34509803919999998" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="13"/>
+                                                <state key="normal" title="Instagram">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="instagramButton:" destination="Uaz-Ao-Huz" eventType="touchUpInside" id="yXD-U6-rK2"/>
+                                                </connections>
+                                            </button>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="1" verticalCompressionResistancePriority="749" image="portrait" translatesAutoresizingMaskIntoConstraints="NO" id="Ko1-tU-8Gj">
+                                                <rect key="frame" x="0.0" y="56" width="374" height="200.00000000000006"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="200" id="usA-tt-CwM"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="761" text="ACKNOWLEDGEMENT" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="4tF-AZ-3fE">
+                                                <rect key="frame" x="0.0" y="256.00000000000006" width="374" height="142.66666666666663"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="36"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="128-DV-C4R">
+                                                <rect key="frame" x="0.0" y="398.66666666666669" width="374" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="2qo-Mo-Ku1"/>
+                                                </constraints>
+                                                <state key="normal" title="https://icons8.com"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="rw7-uz-JVz" firstAttribute="width" secondItem="O46-z0-MGP" secondAttribute="width" id="wpx-eE-xHd"/>
+                                </constraints>
+                                <variation key="heightClass=compact-widthClass=compact" axis="horizontal"/>
+                                <variation key="heightClass=regular-widthClass=compact" axis="vertical"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="c3D-sj-XSg" secondAttribute="bottom" constant="50" id="15N-1B-pCg"/>
+                            <constraint firstAttribute="trailing" secondItem="c3D-sj-XSg" secondAttribute="trailing" constant="20" id="3g7-0P-GLL"/>
+                            <constraint firstItem="c3D-sj-XSg" firstAttribute="top" secondItem="ahu-YD-odM" secondAttribute="top" constant="20" id="bKa-Vd-2h8"/>
+                            <constraint firstItem="c3D-sj-XSg" firstAttribute="leading" secondItem="ahu-YD-odM" secondAttribute="leading" constant="20" id="zOb-n8-wpM"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="About" image="Icon-Small copy" selectedImage="Icon-Small copy" id="mhk-vT-oDd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uMQ-hF-Puf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1" y="797"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="Dqz-Jy-wil" kind="relationship" relationship="viewControllers" id="eZU-Sg-WEz"/>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="Uaz-Ao-Huz" kind="relationship" relationship="viewControllers" id="AFt-GP-LZk"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Icon-Small" width="29" height="29"/>
+        <image name="Icon-Small copy" width="29" height="29"/>
+        <image name="Icon-Small copy 2" width="29" height="29"/>
+        <image name="IphoneWallpaper" width="1080" height="1920"/>
+        <image name="icons8-google-32" width="32" height="32"/>
+        <image name="portrait" width="1188" height="1186"/>
+        <image name="yoyoLogo1" width="500" height="500"/>
+    </resources>
+</document>
